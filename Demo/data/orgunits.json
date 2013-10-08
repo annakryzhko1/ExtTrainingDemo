@@ -1,0 +1,26 @@
+{	name:'Organization',
+    orgId: 1,
+    managerId: 1,
+    location:'task-folder',
+    parentorgId: null,
+    expanded: true,
+	"children": [
+		    {
+		        name:'Organization',
+		        orgId: 2,
+		        managerId: 1,
+		        location:'task-folder',
+		        parentorgId: 1,
+		        expanded: true,
+		        "children": [{
+		            name:'Department 1',
+		        	orgId: 3,
+		        	managerId: 1,
+		        	location:'task-folder',
+		        	parentOrgId: 2,
+		        	leaf:true
+		        	}
+		]  
+		}
+	]
+}
