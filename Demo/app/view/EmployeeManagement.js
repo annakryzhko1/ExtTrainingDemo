@@ -1,4 +1,5 @@
 Ext.define("Demo.view.EmployeeManagement", {
     extend: 'Ext.Component',
-    html: 'Hello, World!!'
+    alias: 'widget.employeemanagement',
+    html: 'employeemanagement'
 });

@@ -2,16 +2,22 @@ Ext.define('Demo.Application', {
     name: 'Demo',
 
     extend: 'Ext.app.Application',
+    
+    autoCreateViewport: true,
 
     views: [
-        // TODO: add views here
+        'Employees', 'EmployeeManagement', 'Organizations'
     ],
 
     controllers: [
-        // TODO: add controllers here
+        'EmpController', 'OrgController'
     ],
 
     stores: [
-        // TODO: add stores here
-    ]
+        'OrgUnits', 'Employees'
+    ],
+
+    init: function(app) {
+        console.log('app init');
+    }
 });

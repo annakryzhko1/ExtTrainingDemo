@@ -7,6 +7,5 @@ Ext.define('Demo.model.OrgUnit', {
         { name: 'managerId', type: 'int' },
         { name: 'location', type: 'string' },
         { name: 'parentOrgId', type: 'int' }
-
     ]
 });
