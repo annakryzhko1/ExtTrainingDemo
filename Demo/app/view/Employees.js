@@ -10,8 +10,20 @@ Ext.define("Demo.view.Employees", {
 			dataIndex : 'name',
 			flex : 1
 		}, {
-			header : 'Email',
-			dataIndex : 'email',
+			header : 'Age',
+			dataIndex : 'age',
+			flex : 1
+		}, {
+			header : 'Phone',
+			dataIndex : 'phone',
+			flex : 1
+		}, {
+			header : 'Age',
+			dataIndex : 'age',
+			flex : 1
+		}, {
+			header : 'Married',
+			dataIndex : 'married',
 			flex : 1
 		}];
 

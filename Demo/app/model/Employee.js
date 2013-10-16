@@ -5,9 +5,9 @@ Ext.define('Demo.model.Employee', {
         { name: 'empId', type: 'int' },
         { name: 'name', type: 'string' },
         { name: 'age', type: 'int' },
-        { name: 'terminated', type: 'boolean' },
         { name: 'phone', type: 'string' },
-        { name: 'orgId', type: 'int' }
+        { name: 'married', type: 'boolean' },
+        { name: 'orgId', type: 'string' }
 
     ]
 });
