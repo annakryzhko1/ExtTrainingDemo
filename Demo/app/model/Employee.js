@@ -4,7 +4,7 @@ Ext.define('Demo.model.Employee', {
     fields: [
         { name: 'empId', type: 'int' },
         { name: 'name', type: 'string' },
-        { name: 'age', type: 'int' },
+        { name: 'birthdate', type: 'datetime' },
         { name: 'phone', type: 'string' },
         { name: 'married', type: 'boolean' },
         { name: 'orgId', type: 'string' }

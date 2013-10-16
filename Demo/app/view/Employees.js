@@ -9,17 +9,14 @@ Ext.define("Demo.view.Employees", {
 			header : 'Name',
 			dataIndex : 'name',
 			flex : 1
-		}, {
-			header : 'Age',
-			dataIndex : 'age',
-			flex : 1
-		}, {
+		}, 
+		{
 			header : 'Phone',
 			dataIndex : 'phone',
 			flex : 1
 		}, {
-			header : 'Age',
-			dataIndex : 'age',
+			header : 'Birth date',
+			dataIndex : 'birthdate',
 			flex : 1
 		}, {
 			header : 'Married',
