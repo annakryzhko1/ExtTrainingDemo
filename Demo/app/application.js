@@ -3,11 +3,7 @@ Ext.define('Demo.Application', {
 
     extend: 'Ext.app.Application',
     
-    autoCreateViewport: true,
-
-    views: [
-        'Employees', 'EmployeeManagement', 'Organizations'
-    ],
+    autoCreateViewport: true,    
 
     controllers: [
         'EmpController', 'OrgController'

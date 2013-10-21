@@ -1,6 +1,7 @@
 Ext.define('Demo.view.Organizations', {
 	extend : 'Ext.tree.Panel',
 	alias : 'widget.organizationtree',
+	xtype : 'organizationtree',
 	title : 'Organization chart',
 	width : 500,
 	height : 600,

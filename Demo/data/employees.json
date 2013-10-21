@@ -1,18 +1,18 @@
 {
     "success": true,
     "employees": [
-        {"id": 1, "name": 'Ed',    "birthdate": '12.12.12', "married": true, "orgId": 'z51-002', "phone": "123"},
-        {"id": 2, "name": 'Tommy', "birthdate": '12.12.12', "married": true, "orgId": 'z51-003', "phone": "123"},
-        {"id": 3, "name": 'Ed',    "birthdate": '12.12.12', "married": true, "orgId": 'z51-003', "phone": "123"},
-        {"id": 4, "name": 'Some',    "birthdate": '12.12.12', "married": true, "orgId": 'inner-001', "phone": "123"},
-        {"id": 5, "name": 'Gavin',   "birthdate": '12.12.12', "married": true, "orgId": 'rnd-001', "phone": "123"},
-        {"id": 6, "name": 'Derek',   "birthdate": '12.12.12', "married": true, "orgId": 'rnd-001', "phone": "123"},
-        {"id": 7, "name": 'Martin',  "birthdate": '12.12.12', "married": true, "orgId": 'vip-002', "phone": "123"},
-        {"id": 8, "name": 'Ross',    "birthdate": '12.12.12', "married": true, "orgId": 'vip-003', "phone": "123"},
-        {"id": 9, "name": 'Chandler',  "birthdate": '12.12.12', "married": true, "orgId": 'z51-001', "phone": "123"},
-        {"id": 10, "name": 'Monika',   "birthdate": '12.12.12', "married": true, "orgId": 'z51-001', "phone": "123"},
-        {"id": 11, "name": 'Rachel',   "birthdate": '12.12.12', "married": true, "orgId": 'inner-001', "phone": "123"},
-        {"id": 12, "name": 'Joey',    "birthdate": '12.12.12', "married": true, "orgId": 'inner-001', "phone": "123"},
-        {"id": 13, "name": 'Steve',    "birthdate": '12.12.12', "married": true, "orgId": 'inner-001', "phone": "123"}
+        {"id": 1, "name": 'Ed',    "birthdate": '12.12.12', "terminated": true, "orgId": 'z51-002', "phone": "123"},
+        {"id": 2, "name": 'Tommy', "birthdate": '12.12.12', "terminated": true, "orgId": 'z51-003', "phone": "123"},
+        {"id": 3, "name": 'Ed',    "birthdate": '12.12.12', "terminated": true, "orgId": 'z51-003', "phone": "123"},
+        {"id": 4, "name": 'Some',    "birthdate": '12.12.12', "terminated": true, "orgId": 'inner-001', "phone": "123"},
+        {"id": 5, "name": 'Gavin',   "birthdate": '12.12.12', "terminated": true, "orgId": 'rnd-001', "phone": "123"},
+        {"id": 6, "name": 'Derek',   "birthdate": '12.12.12', "terminated": true, "orgId": 'rnd-001', "phone": "123"},
+        {"id": 7, "name": 'Martin',  "birthdate": '12.12.12', "terminated": true, "orgId": 'vip-002', "phone": "123"},
+        {"id": 8, "name": 'Ross',    "birthdate": '12.12.12', "terminated": true, "orgId": 'vip-003', "phone": "123"},
+        {"id": 9, "name": 'Chandler',  "birthdate": '12.12.12', "terminated": true, "orgId": 'z51-001', "phone": "123"},
+        {"id": 10, "name": 'Monika',   "birthdate": '12.12.12', "terminated": true, "orgId": 'z51-001', "phone": "123"},
+        {"id": 11, "name": 'Rachel',   "birthdate": '12.12.12', "terminated": true, "orgId": 'inner-001', "phone": "123"},
+        {"id": 12, "name": 'Joey',    "birthdate": '12.12.12', "terminated": true, "orgId": 'inner-001', "phone": "123"},
+        {"id": 13, "name": 'Steve',    "birthdate": '12.12.12', "terminated": true, "orgId": 'inner-001', "phone": "123"}
     ]
 }

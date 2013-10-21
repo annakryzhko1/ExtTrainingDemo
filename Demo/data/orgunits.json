@@ -1,26 +1,30 @@
-{	name:'Organization',
-    orgId: 1,
-    managerId: 1,
-    location:'task-folder',
-    parentorgId: null,
-    expanded: true,
-	"children": [
-		    {
-		        name:'Organization',
-		        orgId: 2,
-		        managerId: 1,
-		        location:'task-folder',
-		        parentorgId: 1,
-		        expanded: true,
-		        "children": [{
-		            name:'Department 1',
-		        	orgId: 3,
-		        	managerId: 1,
-		        	location:'task-folder',
-		        	parentOrgId: 2,
-		        	leaf:true
-		        	}
-		]  
-		}
-	]
+{
+    "success": true,
+    "orgunits": [
+        {"id": 'all', "name": 'Company'},
+        {"id": 'rnd', "name": 'R&D'},
+        {"id": 'rnd-001', "name": 'R&D-Web interface for trade automation'},
+        {"id": 'inner', "name": 'Inner clients'},
+        {"id": 'inner-001', "name": 'Inner clients-Health monitoring badge'},
+        {id: 'vip', name: 'VIP clients'},
+		{	name: 'Building a helicopter',
+				id: 'vip-002'
+			}, {
+				name: 'Sharks shooting lasers',
+				id: 'vip-003'
+			},
+			{name: 'Flying saucers development',
+			id: 'z51'},
+			{
+				name: 'Teddy bears stuffing',
+				id: 'z51-001'
+			}, {
+				name: 'Teddy bears sewing',
+				id: 'z51-002'
+			}, {
+				name: 'Teddy bears homing system',
+				id: 'z51-003'
+			}
+
+    ]
 }

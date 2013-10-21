@@ -19,11 +19,19 @@ Ext.define("Demo.view.Employees", {
 			dataIndex : 'birthdate',
 			flex : 1
 		}, {
-			header : 'Married',
-			dataIndex : 'married',
+			header : 'Terminated',
+			dataIndex : 'terminated',
 			flex : 1
 		}];
 
 		this.callParent(arguments);
-	}
+		
+		this.store.on('load', function() {
+			debugger;
+			this.getSelectionModel().select(this.store.getAt(0));
+		
+		}, this);
+	
+		
+		}
 });
