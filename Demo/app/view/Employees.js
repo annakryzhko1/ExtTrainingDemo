@@ -26,8 +26,7 @@ Ext.define("Demo.view.Employees", {
 
 		this.callParent(arguments);
 		
-		this.store.on('load', function() {
-			debugger;
+		this.store.on('load', function() {			
 			this.getSelectionModel().select(this.store.getAt(0));
 		
 		}, this);

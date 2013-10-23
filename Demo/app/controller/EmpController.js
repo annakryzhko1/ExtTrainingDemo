@@ -6,7 +6,7 @@ Ext.define('Demo.controller.EmpController', {
 	models : ['Employee'],
 
 	views : ['EmployeeManagement', 'Employees', 'EmployeeAdd'],
-	
+		
 	refs: [{
          ref: 'organizationtree',
          selector: 'organizationtree'
@@ -15,8 +15,10 @@ Ext.define('Demo.controller.EmpController', {
          ref: 'employeesgrid',
          selector: 'employeesgrid'
               }],
+    
 	
 	init: function() {
+		Ext.require("app/utils/vtypes");
          this.listen({
              controller: {
                  '#OrgController': {
@@ -41,7 +43,22 @@ Ext.define('Demo.controller.EmpController', {
 				'employeeadd button[action=cancel]' : {
 					click : this.cancelEditEmployee
 				},
+				'employeeadd checkboxfield[name=terminated]' : {
+					change : this.changeCheckBoxField
+				}
 		});
+     },
+     
+     changeCheckBoxField: function (field, newValue, oldValue, eOpts ) {
+     	var form = field.up('form'), birthDateField;
+     	if (!form) {
+     		return;
+     	}
+     	birthDateField = form.down('datefield[name=birthdate]');
+     	if (birthDateField) {
+     		birthDateField.validate();
+     	}     	
+     	
      },
      
      saveEmployee: function(button, e) {
@@ -56,6 +73,7 @@ Ext.define('Demo.controller.EmpController', {
      	this.getEmployeesStore().add(values) ;
      	
      },
+     
      onUnitChanged: function (item) {  
      	var unitId =  item[0].internalId,
      	    store = this.getEmployeesStore();
