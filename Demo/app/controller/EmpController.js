@@ -18,7 +18,7 @@ Ext.define('Demo.controller.EmpController', {
     
 	
 	init: function() {
-		Ext.require("app/utils/vtypes");
+		
          this.listen({
              controller: {
                  '#OrgController': {

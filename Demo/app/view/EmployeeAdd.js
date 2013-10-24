@@ -27,7 +27,23 @@ Ext.define('Demo.view.EmployeeAdd', {
                     {
                         xtype: 'datefield',
                         name : 'birthdate',
-                        vtype: 'employeeBirthDate',
+                        validator: function(val) {
+                        	var form = this.up('form'),
+					    	isValidated = false,
+					    	terminatedField,
+					    	date1950 = new Date("01 01 1950 00:00:00");
+					    	if (!form) {
+					    		return true;
+					    	}  
+					    	terminatedField = form.down('checkboxfield[name=terminated]');
+					    	isValidated = terminatedField && !terminatedField.checked;
+					    	
+					    	if (isValidated) {
+					    		return (new Date(val) > date1950) ? true: 'Not a valid date. For active employees birth date should not be before 1950';
+					    	}
+					        return true; 
+                        },
+                        //vtype: 'employeeBirthDate',
                         fieldLabel: 'Birth date',
                     },
                     {
